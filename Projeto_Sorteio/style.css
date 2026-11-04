@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #2d1747;
+    background: linear-gradient(135deg, #2c1a4a, #562782, #6b1faf);
+}
+
+.container {
+    width: min(100%, 620px);
+    padding: 32px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgb(35 0 70 / 25%);
+}
+
+h1,
+h2 {
+    color: #6b21a8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+input,
+button {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 12px;
+    border: 1px solid #c4b5fd;
+    border-radius: 8px;
+    font: inherit;
+}
+
+button {
+    border: 0;
+    color: #fff;
+    background: #7e22ce;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6b21a8;
+}
+
+.resultado {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #f3e8ff;
+}
+
+.historico {
+    margin-top: 24px;
+    overflow-x: auto;
+}
+
+.historico table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.historico th,
+.historico td {
+    padding: 10px;
+    border: 1px solid #ddd0f5;
+}
+
+.historico th {
+    color: #fff;
+    background: #7e22ce;
+}
+
+.historico tbody tr:nth-child(even) {
+    background: #f3e8ff;
+}
+
+.erro {
+    color: #b42318;
+}
+
+.data {
+    margin-top: 24px;
+    color: #6b5b7a;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .historico th,
+    .historico td {
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+}
